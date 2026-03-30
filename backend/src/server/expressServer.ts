@@ -14,9 +14,6 @@ const cookie = cookieSession({
   sameSite: "lax",
   keys: ["brbrbr"],
 });
-const cors = CORS({
-  origin: ["http://localhost:5173"],
-});
 
 class ExpressServer implements ExpressServerType {
   app: Express;
@@ -26,7 +23,7 @@ class ExpressServer implements ExpressServerType {
   startServer() {
     this.app.use(
       CORS({
-        origin: ["http://localhost:5173"],
+        origin: ["https://hackathon-2026-brown.vercel.app"],
         credentials: true,
       }),
     );
