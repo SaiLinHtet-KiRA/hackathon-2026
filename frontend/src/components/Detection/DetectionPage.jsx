@@ -1054,7 +1054,7 @@ function exportReport(incident, witnesses, equipment) {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CrashFusion Detection Report — ${incident.id}</title>
+  <title>DETECT Detection Report — ${incident.id}</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Segoe UI',Arial,sans-serif;padding:40px;color:#1f2937;background:#fff;font-size:13px}
@@ -1083,7 +1083,7 @@ function exportReport(incident, witnesses, equipment) {
 </head>
 <body>
   <div class="hdr">
-    <div><div class="logo">⚡ CrashFusion<small>CCTV Accident AI — Detection Report</small></div></div>
+    <div><div class="logo">⚡ DETECT<small>CCTV Accident AI — Detection Report</small></div></div>
     <div style="text-align:right">
       <div class="rtitle">${incident.id}</div>
       <div class="rmeta">Generated: ${new Date().toLocaleString()}</div>
@@ -1149,7 +1149,7 @@ function exportReport(incident, witnesses, equipment) {
     .join("")}
 
   <div class="footer">
-    <div>CrashFusion — AI-Powered Accident Detection &amp; Response System · Bangkok, Thailand</div>
+    <div>DETECT — AI-Powered Accident Detection &amp; Response System · Bangkok, Thailand</div>
     <div>Report ID: RPT-${Date.now()} · Operator Verified</div>
   </div>
 </body>

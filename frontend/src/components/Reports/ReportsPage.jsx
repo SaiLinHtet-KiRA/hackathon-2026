@@ -22,11 +22,11 @@ const languages = [
 
 const reportContent = {
   en: {
-    title: "CrashFusion Accident Intelligence Report",
+    title: "DETECT Accident Intelligence Report",
     subtitle: "Automated Multi-Source Incident Analysis",
     summary: "EXECUTIVE SUMMARY",
     summaryText:
-      "This report covers traffic accident incidents detected and corroborated by the CrashFusion AI system for the reporting period. A total of 47 incidents were recorded, with 8 classified as Critical severity requiring immediate emergency response. AI fusion analysis achieved an average confidence score of 83.2% across all detections.",
+      "This report covers traffic accident incidents detected and corroborated by the DETECT AI system for the reporting period. A total of 47 incidents were recorded, with 8 classified as Critical severity requiring immediate emergency response. AI fusion analysis achieved an average confidence score of 83.2% across all detections.",
     stats: "KEY STATISTICS",
     statItems: [
       { label: "Total Incidents", value: "47" },
@@ -46,11 +46,11 @@ const reportContent = {
     ],
   },
   th: {
-    title: "รายงานข่าวกรองอุบัติเหตุ CrashFusion",
+    title: "รายงานข่าวกรองอุบัติเหตุ DETECT",
     subtitle: "การวิเคราะห์เหตุการณ์อัตโนมัติจากหลายแหล่ง",
     summary: "บทสรุปผู้บริหาร",
     summaryText:
-      "รายงานนี้ครอบคลุมเหตุการณ์อุบัติเหตุทางถนนที่ตรวจพบและยืนยันโดยระบบ AI ของ CrashFusion สำหรับช่วงเวลาที่รายงาน โดยมีเหตุการณ์ทั้งหมด 47 ครั้ง โดย 8 ครั้งถูกจัดว่ามีความรุนแรงระดับวิกฤตที่ต้องการการตอบสนองฉุกเฉินทันที การวิเคราะห์แบบผสานข้อมูล AI บรรลุคะแนนความเชื่อมั่นเฉลี่ย 83.2% สำหรับการตรวจจับทั้งหมด",
+      "รายงานนี้ครอบคลุมเหตุการณ์อุบัติเหตุทางถนนที่ตรวจพบและยืนยันโดยระบบ AI ของ DETECT สำหรับช่วงเวลาที่รายงาน โดยมีเหตุการณ์ทั้งหมด 47 ครั้ง โดย 8 ครั้งถูกจัดว่ามีความรุนแรงระดับวิกฤตที่ต้องการการตอบสนองฉุกเฉินทันที การวิเคราะห์แบบผสานข้อมูล AI บรรลุคะแนนความเชื่อมั่นเฉลี่ย 83.2% สำหรับการตรวจจับทั้งหมด",
     stats: "สถิติสำคัญ",
     statItems: [
       { label: "เหตุการณ์ทั้งหมด", value: "47" },
@@ -70,11 +70,11 @@ const reportContent = {
     ],
   },
   ms: {
-    title: "Laporan Perisikan Kemalangan CrashFusion",
+    title: "Laporan Perisikan Kemalangan DETECT",
     subtitle: "Analisis Insiden Automatik Berbilang Sumber",
     summary: "RINGKASAN EKSEKUTIF",
     summaryText:
-      "Laporan ini merangkumi insiden kemalangan lalu lintas yang dikesan dan disahkan oleh sistem AI CrashFusion untuk tempoh pelaporan. Sejumlah 47 insiden telah direkodkan, dengan 8 diklasifikasikan sebagai keterukan Kritikal yang memerlukan tindak balas kecemasan segera. Analisis gabungan AI mencapai skor keyakinan purata 83.2% merentas semua pengesanan.",
+      "Laporan ini merangkumi insiden kemalangan lalu lintas yang dikesan dan disahkan oleh sistem AI DETECT untuk tempoh pelaporan. Sejumlah 47 insiden telah direkodkan, dengan 8 diklasifikasikan sebagai keterukan Kritikal yang memerlukan tindak balas kecemasan segera. Analisis gabungan AI mencapai skor keyakinan purata 83.2% merentas semua pengesanan.",
     stats: "STATISTIK UTAMA",
     statItems: [
       { label: "Jumlah Insiden", value: "47" },
@@ -94,11 +94,11 @@ const reportContent = {
     ],
   },
   my: {
-    title: "CrashFusion မတော်တဆမှု ထောက်လှမ်းရေးအစီရင်ခံစာ",
+    title: "DETECT မတော်တဆမှု ထောက်လှမ်းရေးအစီရင်ခံစာ",
     subtitle: "အလိုအလျောက် ဘက်စုံရင်းမြစ် ဖြစ်ရပ်ခွဲခြမ်းစိတ်ဖြာမှု",
     summary: "အမှုဆောင်အကျဉ်းချုပ်",
     summaryText:
-      "ဤအစီရင်ခံစာတွင် CrashFusion AI စနစ်မှ သတင်းပေးပို့ကာလအတွင်း တွေ့ရှိပြီး အတည်ပြုသော လမ်းပေါ်မတော်တဆမှု ဖြစ်ရပ်များပါဝင်သည်။ ဖြစ်ရပ်စုစုပေါင်း ၄၇ ခု မှတ်တမ်းတင်ခဲ့ပြီး ၈ ခုသည် ချက်ချင်းသောသောအရေးပေါ်တုံ့ပြန်မှု လိုအပ်သည့် အမြင့်ဆုံးအဆင့် အဖြစ် သတ်မှတ်ခဲ့သည်။ AI ပေါင်းစပ်ခွဲခြမ်းစိတ်ဖြာမှုသည် ပျမ်းမျှ ယုံကြည်မှုရမှတ် 83.2% ရရှိသည်။",
+      "ဤအစီရင်ခံစာတွင် DETECT AI စနစ်မှ သတင်းပေးပို့ကာလအတွင်း တွေ့ရှိပြီး အတည်ပြုသော လမ်းပေါ်မတော်တဆမှု ဖြစ်ရပ်များပါဝင်သည်။ ဖြစ်ရပ်စုစုပေါင်း ၄၇ ခု မှတ်တမ်းတင်ခဲ့ပြီး ၈ ခုသည် ချက်ချင်းသောသောအရေးပေါ်တုံ့ပြန်မှု လိုအပ်သည့် အမြင့်ဆုံးအဆင့် အဖြစ် သတ်မှတ်ခဲ့သည်။ AI ပေါင်းစပ်ခွဲခြမ်းစိတ်ဖြာမှုသည် ပျမ်းမျှ ယုံကြည်မှုရမှတ် 83.2% ရရှိသည်။",
     stats: "အဓိကစာရင်းဇယားများ",
     statItems: [
       { label: "ဖြစ်ရပ်စုစုပေါင်း", value: "47" },
@@ -118,11 +118,11 @@ const reportContent = {
     ],
   },
   zh: {
-    title: "CrashFusion事故情报报告",
+    title: "DETECT事故情报报告",
     subtitle: "自动多源事件分析系统",
     summary: "执行摘要",
     summaryText:
-      "本报告涵盖CrashFusion人工智能系统在报告期内检测和证实的交通事故事件。共记录了47起事故，其中8起被归类为需要立即紧急响应的危急严重程度。人工智能融合分析在所有检测中达到了平均83.2%的置信度。",
+      "本报告涵盖DETECT人工智能系统在报告期内检测和证实的交通事故事件。共记录了47起事故，其中8起被归类为需要立即紧急响应的危急严重程度。人工智能融合分析在所有检测中达到了平均83.2%的置信度。",
     stats: "关键统计数据",
     statItems: [
       { label: "事故总数", value: "47" },
@@ -142,11 +142,11 @@ const reportContent = {
     ],
   },
   dz: {
-    title: "CrashFusion རླངས་འཁོར་དོན་རྐྱེན་སྙན་ཐོ།",
+    title: "DETECT རླངས་འཁོར་དོན་རྐྱེན་སྙན་ཐོ།",
     subtitle: "རང་འགུལ་ཐབས་ལམ་གྱི་དོན་རྐྱེན་དབྱེ་ཞིབ།",
     summary: "དོན་གཙོའི་སྙན་ཐོ།",
     summaryText:
-      "སྙན་ཐོ་འདི་ནང་ CrashFusion AI མཉམ་འབྲེལ་ལས་སྣ་ཡིས་ཉར་ཚགས་དུས་ཡུན་ནང་འཚོལ་ཞིབ་དང་གཏན་འཁེལ་བྱས་པའི་རླངས་འཁོར་དོན་རྐྱེན་ཚུ་ཚུད་ཡོད། སྤྱིར་བཏང་དོན་རྐྱེན་47ཅིག་ཐོ་བཀོད་འབད་ཡོདཔ་ལས་དོན་རྐྱེན་8ཅིག་ཚབས་ཆེ་ཤོས་ཀྱི་གོ་རིམ་ལུ་ངོས་འཛིན་འབད་ཡོད། AI མཉམ་འབྲེལ་དབྱེ་ཞིབ་ཀྱིས་ཆ་སྙོམས་ 83.2% ཀྱི་ཡིད་ཆེས་རྒྱུ་མཚན་ས་ལ་སླེབས་ཡོད།",
+      "སྙན་ཐོ་འདི་ནང་ DETECT AI མཉམ་འབྲེལ་ལས་སྣ་ཡིས་ཉར་ཚགས་དུས་ཡུན་ནང་འཚོལ་ཞིབ་དང་གཏན་འཁེལ་བྱས་པའི་རླངས་འཁོར་དོན་རྐྱེན་ཚུ་ཚུད་ཡོད། སྤྱིར་བཏང་དོན་རྐྱེན་47ཅིག་ཐོ་བཀོད་འབད་ཡོདཔ་ལས་དོན་རྐྱེན་8ཅིག་ཚབས་ཆེ་ཤོས་ཀྱི་གོ་རིམ་ལུ་ངོས་འཛིན་འབད་ཡོད། AI མཉམ་འབྲེལ་དབྱེ་ཞིབ་ཀྱིས་ཆ་སྙོམས་ 83.2% ཀྱི་ཡིད་ཆེས་རྒྱུ་མཚན་ས་ལ་སླེབས་ཡོད།",
     stats: "གནད་ཁག་ཐོ་རྒྱུགས།",
     statItems: [
       { label: "དོན་རྐྱེན་ཕྱོགས་བསྡུས།", value: "47" },
@@ -218,7 +218,7 @@ export default function ReportsPage() {
       .join("");
     printWindow.document.write(`<!DOCTYPE html><html><head>
       <meta charset="utf-8"/>
-      <title>CrashFusion Report</title>
+      <title>DETECT Report</title>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Thai&family=Noto+Sans+SC&family=Noto+Sans+Tamil&display=swap');
         body{font-family:'Noto Sans',sans-serif;margin:40px;color:#111;background:#fff}
@@ -260,7 +260,7 @@ export default function ReportsPage() {
       </table>
       <h3 style="font-size:11px;letter-spacing:1px;color:#3b82f6;margin-top:20px">${content.recommendations}</h3>
       ${content.recItems.map((r, i) => `<div class="rec">${i + 1}. ${r}</div>`).join("")}
-      <div class="footer">Generated by CrashFusion AI Fusion Engine v2.4 · Confidential</div>
+      <div class="footer">Generated by DETECT AI Fusion Engine v2.4 · Confidential</div>
       <script>window.onload=()=>{window.print()}</script>
     </body></html>`);
     printWindow.document.close();
@@ -301,7 +301,7 @@ export default function ReportsPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `crashfusion_report_${dateFrom}_${dateTo}.csv`;
+    a.download = `DETECT_report_${dateFrom}_${dateTo}.csv`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -564,7 +564,7 @@ export default function ReportsPage() {
                     className="text-xs font-semibold mb-1"
                     style={{ color: "#3b82f6" }}
                   >
-                    CRASHFUSION AI ·{" "}
+                    DETECT AI ·{" "}
                     {languages.find((l) => l.code === selectedLang)?.flag}{" "}
                     {languages
                       .find((l) => l.code === selectedLang)
@@ -827,8 +827,8 @@ export default function ReportsPage() {
                   color: "var(--fg3)",
                 }}
               >
-                Generated by CrashFusion AI Fusion Engine v2.4 · Confidential —
-                For authorized personnel only
+                Generated by DETECT AI Fusion Engine v2.4 · Confidential — For
+                authorized personnel only
               </div>
             </div>
           </div>

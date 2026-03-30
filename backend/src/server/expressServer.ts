@@ -23,7 +23,10 @@ class ExpressServer implements ExpressServerType {
   startServer() {
     this.app.use(
       CORS({
-        origin: ["https://hackathon-2026-brown.vercel.app"],
+        origin: [
+          "https://hackathon-2026-brown.vercel.app",
+          "http://localhost:5173",
+        ],
         credentials: true,
       }),
     );
