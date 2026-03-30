@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Theme Variables ───────────────────────────────────────────────────── */
+:root, [data-theme="light"] {
+  --bg:      #f8f9fb;   /* soft, near-white background */
+  --card:    #ffffff;   /* pure white cards */
+  --subtle:  #f7f8f9;   /* card header tint */
+  --border:  #e4e6e9;   /* very subtle border */
+  --divider: #eeeff1;   /* lighter divider */
+  --fg:      #111827;   /* near-black text */
+  --fg2:     #6b7280;   /* medium grey */
+  --fg3:     #9ca3af;   /* muted grey */
+  --accent:  #0d9488;   /* teal accent */
+  --shadow:  0 1px 3px rgba(0,0,0,0.06), 0 4px 14px rgba(0,0,0,0.05);
+  --topbar:  #ffffff;
+  --topbar-border: #e4e6e9;
+  --input-bg: #f7f8f9;
+  /* Sidebar — light, matches app theme */
+  --sidebar:  #ffffff;
+  --sidebar-border: #e4e6e9;
+  --sidebar-status: #f7f8f9;
+  --sidebar-status-border: #e4e6e9;
+  --sidebar-label: #9ca3af;
+  --sidebar-nav-active: #0d9488;
+  --sidebar-nav-inactive: #6b7280;
+  --sidebar-fg: #111827;
+  --collapse-btn: #f7f8f9;
+  --collapse-btn-border: #e4e6e9;
+  --collapse-btn-icon: #9ca3af;
+}
+
+[data-theme="dark"] {
+  --bg:      #18191b;
+  --card:    #222426;
+  --subtle:  #2a2c2f;
+  --border:  #363a3e;
+  --divider: #2d3033;
+  --fg:      #f1f3f5;
+  --fg2:     #9da3ae;
+  --fg3:     #636b74;
+  --accent:  #14b8a6;
+  --shadow:  0 2px 10px rgba(0,0,0,0.55);
+  --topbar:  #222426;
+  --topbar-border: #363a3e;
+  --input-bg: #2a2c2f;
+  --sidebar:  #1e2026;
+  --sidebar-border: #2a2d32;
+  --sidebar-status: #252830;
+  --sidebar-status-border: #2e3138;
+  --sidebar-label: #6b7280;
+  --sidebar-nav-active: #14b8a6;
+  --sidebar-nav-inactive: #9da3ae;
+  --sidebar-fg: #f1f3f5;
+  --collapse-btn: #252830;
+  --collapse-btn-border: #2e3138;
+  --collapse-btn-icon: #9da3ae;
+}
+
+/* Fix Tailwind hover classes that render white in dark mode */
+[data-theme="dark"] .hover\:bg-slate-50:hover,
+[data-theme="dark"] .hover\:bg-slate-100:hover {
+  background-color: rgba(255,255,255,0.07) !important;
+}
+[data-theme="dark"] .hover\:bg-red-50:hover {
+  background-color: rgba(239,68,68,0.12) !important;
+}
+[data-theme="dark"] .hover\:bg-slate-50,
+[data-theme="dark"] .hover\:bg-slate-100 {
+  background-color: transparent;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+/* ── Typography — larger, more readable text + open line-heights ─────── */
+.text-xs   { font-size: 0.8125rem  !important; line-height: 1.65 !important; } /* 13px */
+.text-sm   { font-size: 0.9375rem  !important; line-height: 1.6  !important; } /* 15px */
+.text-base { font-size: 1rem       !important; line-height: 1.65 !important; } /* 16px */
+.text-lg   { font-size: 1.125rem   !important; line-height: 1.5  !important; } /* 18px */
+.text-xl   { font-size: 1.25rem    !important; line-height: 1.45 !important; } /* 20px */
+.text-2xl  { font-size: 1.5rem     !important; line-height: 1.4  !important; } /* 24px */
+
+/* Paragraphs and label text always breathe */
+p, label, span { line-height: inherit; }
+
+/* Mono / badge text */
+.font-mono { font-size: 0.8125rem !important; line-height: 1.55 !important; }
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--fg3); }
+
+/* ── Animations ────────────────────────────────────────────────────────── */
+.slide-in { animation: slideIn 0.3s ease-out forwards; }
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+.fade-in { animation: fadeIn 0.2s ease-out forwards; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Leaflet Map Tiles ─────────────────────────────────────────────────── */
+.leaflet-tile {
+  filter: saturate(1.7) contrast(1.08) brightness(0.97);
+}
+
+/* ── Recharts ──────────────────────────────────────────────────────────── */
+.recharts-tooltip-wrapper { outline: none !important; }
+.recharts-default-tooltip {
+  background-color: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  box-shadow: var(--shadow) !important;
+}
+.recharts-tooltip-label  { color: var(--fg)  !important; }
+.recharts-tooltip-item   { color: var(--fg2) !important; }

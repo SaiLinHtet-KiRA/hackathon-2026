@@ -1,0 +1,16 @@
+{
+  "name": "add-data",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "post.js",
+  "scripts": {
+    "add-cctv": "node cctv.js",
+    "add-incident": "node incident.js",
+    "add-report": "node report.js",
+    "add-unit": "node unit.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
