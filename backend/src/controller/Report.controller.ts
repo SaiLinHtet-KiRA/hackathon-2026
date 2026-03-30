@@ -10,7 +10,6 @@ class ReportController implements ReportControllerType {
     res: Response,
   ): Promise<void> {
     try {
-      console.log("req", req.body);
       const Report = await ReportService.createReport(req.body);
       res.status(200).json(Report);
     } catch (error) {

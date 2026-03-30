@@ -43,10 +43,12 @@ ReportSchema.pre("save", async function () {
       );
 
       if (!newID) throw Error("Some things wrong on getting new order id");
+
       const { linkedWitnesses } = await IncidentService.getIncident(
         this.incidentMatch.toString(),
       );
-      await ReportsService.updateReports(linkedWitnesses.toString(), {
+
+      await ReportsService.updateReports(linkedWitnesses._id.toString(), {
         $push: { reports: this._id },
       });
 
