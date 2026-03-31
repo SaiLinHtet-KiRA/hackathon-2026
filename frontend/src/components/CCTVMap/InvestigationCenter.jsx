@@ -375,9 +375,12 @@ function VideoModal({ event, onClose }) {
     },
     {
       label: "Resolution",
-      time: event.ResponderUnit?.createdAt
-        ? formatTime(event.ResponderUnit.createdAt)
-        : "—",
+      time:
+        event.status == "Resolved"
+          ? formatTime(
+              new Date(event.linkedWitnesses.createdAt).getTime() + 120000,
+            )
+          : "—",
     },
   ];
   const operatorLog = [
