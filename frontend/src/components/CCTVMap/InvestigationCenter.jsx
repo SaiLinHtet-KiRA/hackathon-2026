@@ -407,6 +407,22 @@ function VideoModal({ event, onClose }) {
       label: `Severity verified as ${event.severity}`,
       color: "#f59e0b",
     },
+    {
+      time: formatTime(
+        new Date(event.linkedWitnesses.createdAt).getTime() + 114000,
+      ),
+      actor: "Operator A (Admin)",
+      label: "EMS Unit 22 dispatched",
+      color: "#ef4444",
+    },
+    event.status == "Resolved" && {
+      time: formatTime(
+        new Date(event.linkedWitnesses.createdAt).getTime() + 575000,
+      ),
+      actor: "Operator A (Admin)",
+      label: "Incident marked as Resolved",
+      color: "#22c55e",
+    },
   ];
   const detectedClasses = [
     event.severity + " Accident",
