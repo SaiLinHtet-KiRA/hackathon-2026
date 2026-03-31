@@ -1,6 +1,6 @@
 import express, { Express } from "express";
 import ExpressServerType from "./ExpressServer.type";
-import { FRONTEND_URL, PORT } from "../config";
+import { PORT } from "../config";
 import { HandleErrorWithLogger } from "../util/error/handler";
 import Routes from "../routes";
 import cookieSession from "cookie-session";
@@ -12,7 +12,7 @@ const cookie = cookieSession({
   httpOnly: true,
   secret: "",
   sameSite: "lax",
-  keys: ["brbrbr"],
+  keys: ["13123sifnnksfosomkmk"],
 });
 
 class ExpressServer implements ExpressServerType {
