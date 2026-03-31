@@ -305,9 +305,11 @@ function IncidentDetailModal({ incident, witnesses, onClose }) {
     },
     {
       label: "Resolution",
-      time: incident.ResponderUnit
-        ? formatTime(incident.ResponderUnit.createdAt)
-        : "-",
+      time: false
+        ? formatTime(
+            new Date(incident.linkedWitnesses.createdAt).getTime() + 120000,
+          )
+        : "—",
     },
   ];
 

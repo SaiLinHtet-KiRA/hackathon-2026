@@ -352,6 +352,7 @@ function VideoModal({ event, onClose }) {
   //     color: "#22c55e",
   //   },
   // ];
+
   const timeline = [
     {
       label: "Accident Detected",
