@@ -1,7 +1,7 @@
 import { fetchBaseQuery, createApi } from "@reduxjs/toolkit/query/react";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "hhttp://localhost:4000",
+  baseUrl: "https://hackathon-2026-onj1.onrender.com",
   credentials: "include",
 });
 
